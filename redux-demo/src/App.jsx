@@ -5,6 +5,7 @@ import './App.css'
 
 import Premises from './Forms/premises'
 import Survey from './Forms/survey';
+import CameraCapture from './CameraCapture';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       <Route path="/Survey" element={<Survey />} /> {/* Home route */}
       <Route path="/premises" element={<Premises/>} /> {/* Premises route */}
  {/* About route (optional) */}
-      
+      <Route path = '/photo' element={<CameraCapture/>}/>
       {/* Add a fallback route (for 404 or undefined routes) */}
       <Route path="*" element={<h2>Page Not Found</h2>} />
     </Routes>
